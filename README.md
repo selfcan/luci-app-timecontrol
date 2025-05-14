@@ -59,7 +59,7 @@
 
 ## 界面
 
-![screenshots](./doc/timecontrol1.png)
+![screenshots](./doc/timecontrol.png)
 
 # My other project
 
