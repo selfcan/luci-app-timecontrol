@@ -48,9 +48,9 @@ ipc.neighbors({family = 4, dev = "br-lan"}, function(n)
 		ip:value(n.dest:string(), "%s (%s)" %{ n.dest:string(), n.mac })
 	end
 end)
-ipc.neighbors({family = 4, dev = "br-lan"}, function(n)
+ipc.neighbors({family = 6, dev = "br-lan"}, function(n)
 	if n.mac and n.dest then
-		ip:value(n.mac, "%s (%s)" %{n.mac, n.dest:string() })
+		ip:value(n.dest:string(), "%s (%s)" %{ n.dest:string(), n.mac })
 	end
 end)
 
